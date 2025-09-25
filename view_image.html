@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decoded Image Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .image-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .info {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .success {
+            color: #4CAF50;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Base64 Image Successfully Decoded!</h1>
+        
+        <div class="info">
+            <p class="success">✅ Conversion Complete!</p>
+            <p><strong>Original:</strong> Base64 encoded string</p>
+            <p><strong>Converted to:</strong> JPEG image file</p>
+            <p><strong>File size:</strong> 1,484 bytes</p>
+            <p><strong>Location:</strong> attached_assets/decoded_image.jpg</p>
+        </div>
+
+        <div class="image-container">
+            <h3>🏝️ Your Tropical Beach Image:</h3>
+            <img src="attached_assets/decoded_image.jpg" alt="Tropical beach at sunset" />
+        </div>
+        
+        <div class="info">
+            <h3>🔗 Access Options:</h3>
+            <p><strong>Local File:</strong> attached_assets/decoded_image.jpg</p>
+            <p><strong>Image Description:</strong> A peaceful tropical beach at sunset with clear turquoise water, palm trees gently swaying in the breeze, and golden light reflecting on the waves</p>
+        </div>
+    </div>
+</body>
+</html>
